@@ -1,18 +1,28 @@
-<!DOCTYPE html>
-
-<html lang="ru">
+<html>
 <head>
-
-<meta charset="UTF-8">
-
-<title> Пример простой страницы html</title>
+<title>Show hide</title>
 </head>
 
 <body>
-<button onclick="text.style.display='block'">Увидить бегемотика</button> 
-<p> 
- <img src="https://cdn.fishki.net/upload/post/201504/07/1494086/1_22.jpg" width="500" height="500">
+<p>
+  <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'none')
+          e.style.display = 'block';
+       else
+          e.style.display = 'none';
+    }
+//-->
+</script>
 </p>
+<form id="form1" name="form1" method="post" action="">
+  <input type="button" value="Ilya Alexandrovich" onclick="toggle_visibility('MyDiv');"/>
+</form>
+<p>&nbsp;</p>
+<div id="MyDiv">
+<img src="https://runet-id.com/files/photo/206/2061336.jpg?t=1621604097" widht="700" height="500" />
+</div>
 </body>
-
 </html>
